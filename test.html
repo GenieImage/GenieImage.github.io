@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Genie Image Montage</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Automatic Image Montage with jQuery" />
+    <meta name="keywords" content="jquery, images, montage, fullscreen, floating, grid, automatic" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.montage.min.js"></script>
+  </head> 
+  <body>
+    
+    <center>
+    <b>CONTACT US</b> <br></br>   
+        
+    <div id="search">
+      <input id="term" type="text" value="enter your search" />
+      <button id="hit" type="button" name="">Search</button>
+    </div>
+
+    <script>
+        // $("input").onkeydown = function(){search()};
+
+        // function search() {
+        //   alert('in');
+        // }
+
+        $('#term').keypress(function (event) {
+          console.log( "Handler for .keypress() called." );
+          if(event.which == 13 || event.keyCode == 13) {
+            console.log("found enter");
+          }
+          //alert('weeeeeeeee');
+        });
+
+
+
+        //alert('w');
+        $('#hit').click(function() {
+          alert($('#term').val());
+        
+        });
+    </script>
+  </body>
+</html>
+
