@@ -1,0 +1,5 @@
+<root>
+  <item name='android.widget.Toast LENGTH_LONG'>
+    <annotation name='java.lang.annotation.Deprecated' />
+  </item>
+</root>

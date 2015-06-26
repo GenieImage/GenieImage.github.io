@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Debosmit/Documents/GitHub/GenieImage.github.io/PhpImageUpload/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/Users/Debosmit/Documents/GitHub/GenieImage.github.io/PhpImageUpload/app/build/intermediates/pre-dexed/debug/classes-b68bdbfd1ee165c4db01ba993dd35140d93e8a11.jar" />
+    </item>
+    <item
+        jar="/Users/Debosmit/Documents/GitHub/GenieImage.github.io/PhpImageUpload/app/libs/android-async-http-1.4.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3bae85a076241828810bf8fbcc12e5891d5fc34c">
+        <dex dex="/Users/Debosmit/Documents/GitHub/GenieImage.github.io/PhpImageUpload/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.4-36aaa126d7599645ce523a43d1b57ef4a5364fa1.jar" />
+    </item>
+    <item
+        jar="/Users/Debosmit/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/Debosmit/Documents/GitHub/GenieImage.github.io/PhpImageUpload/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-f48e35db96e292e4de4e58d7b13c0f2d1e5bb7e8.jar" />
+    </item>
+
+</items>
