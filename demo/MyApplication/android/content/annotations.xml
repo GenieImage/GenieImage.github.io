@@ -1,0 +1,5 @@
+<root>
+  <item name='android.content.ContextWrapper android.content.ContentResolver getContentResolver()'>
+    <annotation name='java.lang.annotation.Deprecated' />
+  </item>
+</root>
