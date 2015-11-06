@@ -13,6 +13,19 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script>
+			function vidPlay() {
+				console.log("lol");
+				$('#bannerText').css('opacity', '0.0');
+			}
+			
+			function pause(millis) {
+			var date = new Date();
+			var curDate = null;
+			do { curDate = new Date(); }
+			while(curDate-date < millis);
+			}
+		</script>
 	</head>
 	<body class="landing">
 
@@ -39,9 +52,9 @@
 					</header>
 
 				<!-- Banner -->
-					<section id="banner" style="background-color:white;">
+					<section id="banner" style="background-color:white; text-align: center;">
 						<div style="position: absolute; top: 0; width: 100%; height: 100%; z-index: 0;">
-							<video id="video" autoplay loop preload="auto" poster="http://rmdeaftheatre.com/wp-content/uploads/2012/11/gray-background-3.jpg" style="width:100%; height:100%">
+							<video id="video" onplay="vidPlay()" autoplay loop preload="auto" poster="http://rmdeaftheatre.com/wp-content/uploads/2012/11/gray-background-3.jpg" style="width:100%; height:100%">
 						      <source id="mp4" src="movies/My Movie 1.mp4" type="video/mp4">
 						      <source id="webm" src="movies/My Movie 1.WebM" type="video/webm">
 						      <source id="ogv" src="movies/My Movie 1.ogv" type="video/ogg">
@@ -49,10 +62,10 @@
 						    </video>
 						</div>
 						<div class="inner">
-							<h2>Genie</h2>
+							<h2 id="bannerText" style="color: black;">Genie</h2>
 							<p>Bring your photos home</p>
 						</div>
-						<a href="#three" class="more scrolly" style="color: black;">Learn More</a>
+
 					</section>
 
 				
@@ -106,7 +119,7 @@
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="mailto:dray92@uw.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
 							<li>Copyright &copy; 2015 Genie</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -129,6 +142,7 @@
 			    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
 			  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/28466/script.js');
 			</script>
+			
 
 	</body>
 </html>
