@@ -11,20 +11,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<script>
+			var video = document.getElementById("video");
+			// video.addEventListener("canplay", function() {
+			// 	setTimeout(function() {
+			// 		video.play();
+			// 	}, 1000);
+			// });
+			
 			function vidPlay() {
 				console.log("lol");
 				$('#bannerText').css('opacity', '0.0');
 			}
 			
-			function pause(millis) {
-			var date = new Date();
-			var curDate = null;
-			do { curDate = new Date(); }
-			while(curDate-date < millis);
-			}
 		</script>
 	</head>
 	<body class="landing">
@@ -34,7 +36,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Genie</a></h1>
+						<h1><a href="index.html" style="color: white;">Genie</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -42,8 +44,7 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><a href="team.html">Team</a></li>
 										</ul>
 									</div>
 								</li>
@@ -54,7 +55,7 @@
 				<!-- Banner -->
 					<section id="banner" style="background-color:white; text-align: center;">
 						<div style="position: absolute; top: 0; width: 100%; height: 100%; z-index: 0;">
-							<video id="video" onplay="vidPlay()" autoplay loop preload="auto" poster="http://rmdeaftheatre.com/wp-content/uploads/2012/11/gray-background-3.jpg" style="width:100%; height:100%">
+							<video id="video" onplay="vidPlay()" autoplay loop preload="true" poster="http://rmdeaftheatre.com/wp-content/uploads/2012/11/gray-background-3.jpg" style="width:100%; height:100%">
 						      <source id="mp4" src="movies/My Movie 1.mp4" type="video/mp4">
 						      <source id="webm" src="movies/My Movie 1.WebM" type="video/webm">
 						      <source id="ogv" src="movies/My Movie 1.ogv" type="video/ogg">
@@ -62,7 +63,7 @@
 						    </video>
 						</div>
 						<div class="inner">
-							<h2 id="bannerText" style="color: black;">Genie</h2>
+							<h2 id="bannerText">Genie</h2>
 							<p>Bring your photos home</p>
 						</div>
 
@@ -113,17 +114,23 @@
 
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer id="footer" style=" overflow:auto; padding: 1%;">
+						<img src="images/Banner_genie.jpg" style=" width: 0%; height: 0%;">
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="mailto:dray92@uw.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
+							<li><a href="https://www.facebook.com/geniephotoapp" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
+							<!--<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+							<li><a href="mailto:hello@genieapp.xyz" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
 							<li>Copyright &copy; 2015 Genie</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
+						<!-- <div style="float:right; margin-bottom: 0; vertical-align: middle">
+							<a href="mailto:tao@genieapp.xyz"><img src="images/tao.png" style="border-radius: 50%; width: 5%; height: 5%; float:right; margin-left: 1%;"></a>
+							<a href="mailto:debo@genieapp.xyz"><img src="images/debo.png" style="border-radius: 50%; width: 5%; height: 5%; float:right; left: 1%;"></a>
+							<div style="float:right;">Developers:</div>
+						</div> -->
 					</footer>
 
 			</div>

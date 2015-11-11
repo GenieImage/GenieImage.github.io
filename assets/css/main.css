@@ -3337,6 +3337,10 @@
 								width: 2em;
 							}
 
+							.whiteBar:after {
+								background-image: url("images/bars_white.svg") !important;
+							}
+
 							@media screen and (max-width: 736px) {
 
 								#header nav > ul > li > a.menuToggle {
@@ -3813,3 +3817,4 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+	
